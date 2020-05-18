@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Blockletter";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Blockletter"),
+    url(/font/Blockletter.otf) format("opentype"),
+    url(/fonts/Blockletter.ttf) format("truetype");
+}
+
+html, body {
+  height: 100%;
+  background-color: #1030AD;
+  color: #FFCC00;
+}
+
+.App {
+  margin: 1rem;
+  font-family: "Blockletter";
+}
+
+.title {
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 0.25em;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 0.25em;
+}
+
+.container {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.quote-container {
+  width: 49%;
+}
+
+.quote {
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+.movie {
+  text-align: right;
+  font-size: 1.4em;
+}
+
+.poster {
+  text-align: right;
+  width: 49%;
+}
+
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.1em solid #FFCC00;
+  border-radius: 0.15em;
+  box-sizing: border-box;
+  padding: 1.4em 3.5em;
+  margin-top: 6em;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5em;
+  transition: all 0.4s;
+  color: #FFCC00;
+  background-color: #1030AD;
+}
+
+.btn:hover {
+  border: 0.1em solid #1030AD;
+  background-color: #FFCC00;
+  color: #1030AD;
+
+}
