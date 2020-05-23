@@ -57,7 +57,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.data);
     return(
       <div className="App">
         <h1 className="title">Top Movie Quotes</h1>
