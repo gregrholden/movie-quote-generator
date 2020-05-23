@@ -21,6 +21,7 @@ class App extends Component {
     let movie = movieQuotes.random().split('"');
     let quote = "";
     let title = "";
+    // Handle 2 odd cases:
     if (movie[2].trim() == "Rumack:") {
       quote = "Striker: Surely you can't be serious.\r\nRumack: I am serious... and don't call me Shirley.";
       title = "Airplane!";
@@ -28,7 +29,7 @@ class App extends Component {
     else if (movie[2].includes("Gold Hat")) {
       // No idea why the maintainer named this one "Gold Hat"
       quote = movie[1].trim();
-      title = "Blazing Saddles";
+      title = "The Treasure of the Sierra Madre";
     }
     else {
       quote = movie[1].trim();
@@ -59,8 +60,8 @@ class App extends Component {
     console.log(this.state.data);
     return(
       <div className="App">
-        <h1 className="title">Top 100 Movie Quotes</h1>
-        <h4 className="subtitle">According to AFI</h4>
+        <h1 className="title">Top Movie Quotes</h1>
+        <h4 className="subtitle"><a href="https://www.afi.com/afis-100-years-100-movie-quotes/">According to AFI</a></h4>
         <div className="container">
           <div className="quote-container">
             <p className="quote">"{this.state.quote}"</p>
